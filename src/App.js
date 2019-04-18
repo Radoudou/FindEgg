@@ -7,6 +7,7 @@ class App extends Component {
       <React.Fragment>
         <Router />
       </React.Fragment>
+      
     );
   }
 }
