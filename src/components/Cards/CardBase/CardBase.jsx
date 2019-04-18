@@ -1,0 +1,52 @@
+import React from 'react';
+import { Card, Button, CardHeader, CardFooter, CardBody,
+    CardTitle, CardText, CardSubtitle } from 'reactstrap';
+import "./CardBase.css"
+
+const CardBase = (props) => {
+    return (
+        <div>
+            <div className="globaldivfame">
+                {/* <Card>
+                    <CardBody>
+                        <CardTitle></CardTitle>
+                        <CardSubtitle>Duracell Rabbit</CardSubtitle>
+                    </CardBody>
+                    <img id='cardfame' width="100px" src="https://www.duracell.fr/app/themes/duracell/img/home/bunny-history.png" />
+                    <CardBody>
+                        <CardText>Born in 1973</CardText>
+                    </CardBody>
+                    <CardBody>
+                        <CardText>Egg collected 93657</CardText>
+                    </CardBody>
+                </Card> */}
+                <Card className='CardGlobal'>
+                    <CardBody className='CardTop'>
+                        <CardTitle></CardTitle>
+                        <CardHeader tag="h3">Bugs Bunny</CardHeader>
+                    </CardBody>
+                    <img id='cardfame' width="150px" src="#" />
+                    <CardBody className='CardBot'>
+                        {/* <CardText>Born in 1940</CardText> */}
+                    </CardBody>
+                    <CardBody className='CardBot'>
+                        <CardText className='CardEgg'>Egg collected 93657</CardText>
+                    </CardBody>
+                </Card>
+            </div>
+            {/* <Card className='CardLeg'>
+        <CardHeader tag="h3">Bugs Bunny</CardHeader>
+        <CardBody className='CardBodyLeg'>
+            <img className='ImageLeg' width="150px" src="https://i.ibb.co/P5HHC1x/Bugsbunny.png" />
+          <CardText>9768 eggs collected</CardText>
+        </CardBody>
+
+        <CardFooter className="text-muted">Fcuk you</CardFooter>
+        
+      </Card> */}
+        </div>
+
+  );
+};
+
+export default CardBase;
