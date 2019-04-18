@@ -1,0 +1,871 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates:200");
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+#attribution {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  color: white;
+  z-index: 100;
+  font-weight: bold;
+  cursor: pointer;
+}
+#attribution a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+body {
+  margin: 0px;
+}
+
+.sky {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #87e0fd 0%, #53cbf1 40%, #05abe0 100%);
+  background: -webkit-linear-gradient(bottom, #87e0fd 0%, #53cbf1 40%, #05abe0 100%);
+}
+.sky .plane {
+  position: absolute;
+  left: 0vh;
+  top: 10%;
+  transform: rotateZ(55deg);
+  animation: plane 50s linear infinite;
+  animation-delay: 6s;
+  left: -20vh;
+}
+.sky .plane::before {
+  font-family: 'FontAwesome';
+  content: '';
+  font-size: 5vh;
+  z-index: 2;
+  color: #666666;
+}
+.sky .title {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sky .title h1 {
+  font-size: 20vh;
+  color: #46c7f2;
+  text-shadow: 0px 2px 4px #6a9cb5;
+  z-index: 2;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 200;
+}
+.sky .birds {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.sky .birds .bird0 {
+  left: -20vh;
+  position: absolute;
+  top: 29%;
+  z-index: 3;
+  animation: bird 63s linear infinite;
+  animation-delay: 5s;
+}
+.sky .birds .bird0::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: #666666;
+  font-size: 7.5vh;
+}
+.sky .birds .bird1 {
+  left: -20vh;
+  position: absolute;
+  top: 58%;
+  z-index: 4;
+  animation: bird 47s linear infinite;
+  animation-delay: 16s;
+}
+.sky .birds .bird1::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: #cccccc;
+  font-size: 3.75vh;
+}
+.sky .birds .bird2 {
+  left: -20vh;
+  position: absolute;
+  top: 45%;
+  z-index: 4;
+  animation: bird 37s linear infinite;
+  animation-delay: 17s;
+}
+.sky .birds .bird2::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: #cccccc;
+  font-size: 3.75vh;
+}
+.sky .birds .bird3 {
+  left: -20vh;
+  position: absolute;
+  top: 15%;
+  z-index: 4;
+  animation: bird 48s linear infinite;
+  animation-delay: 14s;
+}
+.sky .birds .bird3::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: #cccccc;
+  font-size: 3.75vh;
+}
+.sky .birds .bird4 {
+  left: -20vh;
+  position: absolute;
+  top: 18%;
+  z-index: 4;
+  animation: bird 33s linear infinite;
+  animation-delay: 41s;
+}
+.sky .birds .bird4::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: #999999;
+  font-size: 5vh;
+}
+.sky .birds .bird5 {
+  left: -20vh;
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  animation: bird 61s linear infinite;
+  animation-delay: 25s;
+}
+.sky .birds .bird5::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: #cccccc;
+  font-size: 3.75vh;
+}
+.sky .birds .bird6 {
+  left: -20vh;
+  position: absolute;
+  top: 10%;
+  z-index: 2;
+  animation: bird 26s linear infinite;
+  animation-delay: 23s;
+}
+.sky .birds .bird6::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: #666666;
+  font-size: 7.5vh;
+}
+.sky .birds .bird7 {
+  left: -20vh;
+  position: absolute;
+  top: 20%;
+  z-index: 5;
+  animation: bird 24s linear infinite;
+  animation-delay: 89s;
+}
+.sky .birds .bird7::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: #999999;
+  font-size: 5vh;
+}
+.sky .birds .bird8 {
+  left: -20vh;
+  position: absolute;
+  top: 66%;
+  z-index: 4;
+  animation: bird 65s linear infinite;
+  animation-delay: 45s;
+}
+.sky .birds .bird8::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: #999999;
+  font-size: 5vh;
+}
+.sky .birds .bird9 {
+  left: -20vh;
+  position: absolute;
+  top: 35%;
+  z-index: 4;
+  animation: bird 35s linear infinite;
+  animation-delay: 59s;
+}
+.sky .birds .bird9::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: #999999;
+  font-size: 5vh;
+}
+.sky .clouds {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.sky .clouds .cloud0 {
+  position: absolute;
+  top: 20%;
+  animation: cloud 60s linear infinite;
+  animation-delay: 0s;
+  animation-direction: forwards;
+  left: -50vh;
+  width: 40vh;
+  height: 40vh;
+  z-index: 2;
+  opacity: 0.4;
+}
+.sky .clouds .cloud0::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: white;
+  font-size: 40vh;
+}
+.sky .clouds .cloud1 {
+  position: absolute;
+  top: 67%;
+  animation: cloud 71s linear infinite;
+  animation-delay: 4s;
+  animation-direction: forwards;
+  left: -50vh;
+  width: 40vh;
+  height: 40vh;
+  z-index: 2;
+  opacity: 0.4;
+}
+.sky .clouds .cloud1::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: white;
+  font-size: 40vh;
+}
+.sky .clouds .cloud2 {
+  position: absolute;
+  top: 74%;
+  animation: cloud 57s linear infinite;
+  animation-delay: 6s;
+  animation-direction: forwards;
+  left: -50vh;
+  width: 40vh;
+  height: 40vh;
+  z-index: 5;
+  opacity: 1;
+}
+.sky .clouds .cloud2::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: white;
+  font-size: 40vh;
+}
+.sky .clouds .cloud3 {
+  position: absolute;
+  top: 28%;
+  animation: cloud 35s linear infinite;
+  animation-delay: 9s;
+  animation-direction: forwards;
+  left: -50vh;
+  width: 40vh;
+  height: 40vh;
+  z-index: 3;
+  opacity: 0.6;
+}
+.sky .clouds .cloud3::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: white;
+  font-size: 40vh;
+}
+.sky .clouds .cloud4 {
+  position: absolute;
+  top: 57%;
+  animation: cloud 44s linear infinite;
+  animation-delay: 28s;
+  animation-direction: forwards;
+  left: -50vh;
+  width: 40vh;
+  height: 40vh;
+  z-index: 2;
+  opacity: 0.4;
+}
+.sky .clouds .cloud4::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: white;
+  font-size: 40vh;
+}
+.sky .clouds .cloud5 {
+  position: absolute;
+  top: 9%;
+  animation: cloud 58s linear infinite;
+  animation-delay: 25s;
+  animation-direction: forwards;
+  left: -50vh;
+  width: 40vh;
+  height: 40vh;
+  z-index: 3;
+  opacity: 0.6;
+}
+.sky .clouds .cloud5::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: white;
+  font-size: 40vh;
+}
+.sky .clouds .cloud6 {
+  position: absolute;
+  top: 52%;
+  animation: cloud 60s linear infinite;
+  animation-delay: 30s;
+  animation-direction: forwards;
+  left: -50vh;
+  width: 40vh;
+  height: 40vh;
+  z-index: 3;
+  opacity: 0.6;
+}
+.sky .clouds .cloud6::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: white;
+  font-size: 40vh;
+}
+.sky .clouds .cloud7 {
+  position: absolute;
+  top: 59%;
+  animation: cloud 45s linear infinite;
+  animation-delay: 28s;
+  animation-direction: forwards;
+  left: -50vh;
+  width: 40vh;
+  height: 40vh;
+  z-index: 1;
+  opacity: 0.2;
+}
+.sky .clouds .cloud7::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: white;
+  font-size: 40vh;
+}
+.sky .clouds .cloud8 {
+  position: absolute;
+  top: 48%;
+  animation: cloud 66s linear infinite;
+  animation-delay: 24s;
+  animation-direction: forwards;
+  left: -50vh;
+  width: 40vh;
+  height: 40vh;
+  z-index: 5;
+  opacity: 1;
+}
+.sky .clouds .cloud8::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: white;
+  font-size: 40vh;
+}
+.sky .clouds .cloud9 {
+  position: absolute;
+  top: 47%;
+  animation: cloud 61s linear infinite;
+  animation-delay: 45s;
+  animation-direction: forwards;
+  left: -50vh;
+  width: 40vh;
+  height: 40vh;
+  z-index: 3;
+  opacity: 0.6;
+}
+.sky .clouds .cloud9::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: white;
+  font-size: 40vh;
+}
+.sky .clouds .cloud10 {
+  position: absolute;
+  top: 57%;
+  animation: cloud 40s linear infinite;
+  animation-delay: 30s;
+  animation-direction: forwards;
+  left: -50vh;
+  width: 40vh;
+  height: 40vh;
+  z-index: 5;
+  opacity: 1;
+}
+.sky .clouds .cloud10::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: white;
+  font-size: 40vh;
+}
+.sky .clouds .cloud11 {
+  position: absolute;
+  top: 12%;
+  animation: cloud 49s linear infinite;
+  animation-delay: 33s;
+  animation-direction: forwards;
+  left: -50vh;
+  width: 40vh;
+  height: 40vh;
+  z-index: 1;
+  opacity: 0.2;
+}
+.sky .clouds .cloud11::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: white;
+  font-size: 40vh;
+}
+.sky .clouds .cloud12 {
+  position: absolute;
+  top: 65%;
+  animation: cloud 41s linear infinite;
+  animation-delay: 72s;
+  animation-direction: forwards;
+  left: -50vh;
+  width: 40vh;
+  height: 40vh;
+  z-index: 3;
+  opacity: 0.6;
+}
+.sky .clouds .cloud12::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: white;
+  font-size: 40vh;
+}
+.sky .clouds .cloud13 {
+  position: absolute;
+  top: 25%;
+  animation: cloud 61s linear infinite;
+  animation-delay: 91s;
+  animation-direction: forwards;
+  left: -50vh;
+  width: 40vh;
+  height: 40vh;
+  z-index: 2;
+  opacity: 0.4;
+}
+.sky .clouds .cloud13::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: white;
+  font-size: 40vh;
+}
+.sky .clouds .cloud14 {
+  position: absolute;
+  top: 46%;
+  animation: cloud 22s linear infinite;
+  animation-delay: 56s;
+  animation-direction: forwards;
+  left: -50vh;
+  width: 40vh;
+  height: 40vh;
+  z-index: 1;
+  opacity: 0.2;
+}
+.sky .clouds .cloud14::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: white;
+  font-size: 40vh;
+}
+.sky .clouds .cloud15 {
+  position: absolute;
+  top: 34%;
+  animation: cloud 40s linear infinite;
+  animation-delay: 60s;
+  animation-direction: forwards;
+  left: -50vh;
+  width: 40vh;
+  height: 40vh;
+  z-index: 3;
+  opacity: 0.6;
+}
+.sky .clouds .cloud15::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: white;
+  font-size: 40vh;
+}
+.sky .clouds .cloud16 {
+  position: absolute;
+  top: 20%;
+  animation: cloud 49s linear infinite;
+  animation-delay: 48s;
+  animation-direction: forwards;
+  left: -50vh;
+  width: 40vh;
+  height: 40vh;
+  z-index: 5;
+  opacity: 1;
+}
+.sky .clouds .cloud16::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: white;
+  font-size: 40vh;
+}
+.sky .clouds .cloud17 {
+  position: absolute;
+  top: 23%;
+  animation: cloud 46s linear infinite;
+  animation-delay: 102s;
+  animation-direction: forwards;
+  left: -50vh;
+  width: 40vh;
+  height: 40vh;
+  z-index: 4;
+  opacity: 0.8;
+}
+.sky .clouds .cloud17::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: white;
+  font-size: 40vh;
+}
+.sky .clouds .cloud18 {
+  position: absolute;
+  top: 38%;
+  animation: cloud 68s linear infinite;
+  animation-delay: 126s;
+  animation-direction: forwards;
+  left: -50vh;
+  width: 40vh;
+  height: 40vh;
+  z-index: 4;
+  opacity: 0.8;
+}
+.sky .clouds .cloud18::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: white;
+  font-size: 40vh;
+}
+.sky .clouds .cloud19 {
+  position: absolute;
+  top: 39%;
+  animation: cloud 53s linear infinite;
+  animation-delay: 114s;
+  animation-direction: forwards;
+  left: -50vh;
+  width: 40vh;
+  height: 40vh;
+  z-index: 1;
+  opacity: 0.2;
+}
+.sky .clouds .cloud19::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: white;
+  font-size: 40vh;
+}
+.sky .clouds .cloud20 {
+  position: absolute;
+  top: 74%;
+  animation: cloud 67s linear infinite;
+  animation-delay: 80s;
+  animation-direction: forwards;
+  left: -50vh;
+  width: 40vh;
+  height: 40vh;
+  z-index: 4;
+  opacity: 0.8;
+}
+.sky .clouds .cloud20::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: white;
+  font-size: 40vh;
+}
+.sky .clouds .cloud21 {
+  position: absolute;
+  top: 47%;
+  animation: cloud 53s linear infinite;
+  animation-delay: 84s;
+  animation-direction: forwards;
+  left: -50vh;
+  width: 40vh;
+  height: 40vh;
+  z-index: 3;
+  opacity: 0.6;
+}
+.sky .clouds .cloud21::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: white;
+  font-size: 40vh;
+}
+.sky .clouds .cloud22 {
+  position: absolute;
+  top: 51%;
+  animation: cloud 49s linear infinite;
+  animation-delay: 66s;
+  animation-direction: forwards;
+  left: -50vh;
+  width: 40vh;
+  height: 40vh;
+  z-index: 2;
+  opacity: 0.4;
+}
+.sky .clouds .cloud22::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: white;
+  font-size: 40vh;
+}
+.sky .clouds .cloud23 {
+  position: absolute;
+  top: 72%;
+  animation: cloud 67s linear infinite;
+  animation-delay: 138s;
+  animation-direction: forwards;
+  left: -50vh;
+  width: 40vh;
+  height: 40vh;
+  z-index: 3;
+  opacity: 0.6;
+}
+.sky .clouds .cloud23::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: white;
+  font-size: 40vh;
+}
+.sky .clouds .cloud24 {
+  position: absolute;
+  top: 53%;
+  animation: cloud 20s linear infinite;
+  animation-delay: 96s;
+  animation-direction: forwards;
+  left: -50vh;
+  width: 40vh;
+  height: 40vh;
+  z-index: 1;
+  opacity: 0.2;
+}
+.sky .clouds .cloud24::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: white;
+  font-size: 40vh;
+}
+.sky .clouds .cloud25 {
+  position: absolute;
+  top: 20%;
+  animation: cloud 24s linear infinite;
+  animation-delay: 150s;
+  animation-direction: forwards;
+  left: -50vh;
+  width: 40vh;
+  height: 40vh;
+  z-index: 1;
+  opacity: 0.2;
+}
+.sky .clouds .cloud25::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: white;
+  font-size: 40vh;
+}
+.sky .clouds .cloud26 {
+  position: absolute;
+  top: 68%;
+  animation: cloud 49s linear infinite;
+  animation-delay: 130s;
+  animation-direction: forwards;
+  left: -50vh;
+  width: 40vh;
+  height: 40vh;
+  z-index: 2;
+  opacity: 0.4;
+}
+.sky .clouds .cloud26::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: white;
+  font-size: 40vh;
+}
+.sky .clouds .cloud27 {
+  position: absolute;
+  top: 68%;
+  animation: cloud 66s linear infinite;
+  animation-delay: 162s;
+  animation-direction: forwards;
+  left: -50vh;
+  width: 40vh;
+  height: 40vh;
+  z-index: 3;
+  opacity: 0.6;
+}
+.sky .clouds .cloud27::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: white;
+  font-size: 40vh;
+}
+.sky .clouds .cloud28 {
+  position: absolute;
+  top: 23%;
+  animation: cloud 56s linear infinite;
+  animation-delay: 140s;
+  animation-direction: forwards;
+  left: -50vh;
+  width: 40vh;
+  height: 40vh;
+  z-index: 4;
+  opacity: 0.8;
+}
+.sky .clouds .cloud28::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: white;
+  font-size: 40vh;
+}
+.sky .clouds .cloud29 {
+  position: absolute;
+  top: 59%;
+  animation: cloud 65s linear infinite;
+  animation-delay: 145s;
+  animation-direction: forwards;
+  left: -50vh;
+  width: 40vh;
+  height: 40vh;
+  z-index: 2;
+  opacity: 0.4;
+}
+.sky .clouds .cloud29::before {
+  content: '';
+  font-family: 'FontAwesome';
+  color: white;
+  font-size: 40vh;
+}
+
+@keyframes cloud {
+  from {
+    left: -50vh;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+.title{
+	h1{
+		font-family: 'Pacifico', cursive !important;
+		color: white !important;
+		text-shadow: 10px 10px 2px rgb(0, 0, 0) !important;
+		
+	}
+}
+
+.home-egg{
+	position: absolute;
+  text-align: center;
+}
+
+
+
+.element {
+  width: 350px;
+  height: 350px;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 4s infinite;
+}
+
+@-webkit-keyframes bounce {
+  from {
+    top: 100px;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  25% {
+    top: 50px;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  50% {
+    top: 150px;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  75% {
+    top: 75px;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  to {
+    top: 100px;
+  }
+}
+
+@keyframes bounce {
+  from {
+    top: 100px;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  25% {
+    top: 50px;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  50% {
+    top: 150px;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  75% {
+    top: 75px;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  to {
+    top: 100px;
+  }
+}
+
+#run-rabbit{
+  bottom:5%;
+  position:absolute;
+  -webkit-animation:linear infinite;
+  -webkit-animation-name: run;
+  -webkit-animation-duration: 6s;
+}     
+@-webkit-keyframes run {
+  0% { left: -50%;}
+  100%{ left : 100%;}
+}
+
+@media screen and (max-width: 1006px) {
+    h1{
+    font-size: 100px !important;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1006px) {
+  #run-rabbit{
+    bottom: -5%;
+    position:absolute;
+    -webkit-animation:linear infinite;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 4s;
+}
+}
