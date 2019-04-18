@@ -1,10 +1,12 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable react/style-prop-object */
 import React from 'react';
 import './HomePage.scss';
 
 export default function HomePage() {
     return (
         <React.Fragment>
-            <div id="attribution"> <a href="https://is.gd/hQLAFp">Walid, Jean, Isaure, Radouane</a></div>
+        <div id="attribution"> <a href="https://is.gd/hQLAFp">Walid, Jean, Isaure, Radouane</a></div>
             <div class="sky">
                 <div class="clouds">
                     <div class="cloud30"></div>
