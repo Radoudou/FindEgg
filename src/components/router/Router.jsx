@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import HomePage from '../homePage/HomePage';
+import HomePage from '../HomagePage/HomePage';
 
 export default function Router() {
   return (
