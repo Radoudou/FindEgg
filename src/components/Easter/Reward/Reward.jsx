@@ -8,7 +8,7 @@ export default class Reward extends Component {
                 <section className="bg-sombre">
                     <div className="container-fluid">
                         <div className="row">
-                            <h2 className="whitetext" id="reward">I have captured one of them, how do I get my reward ?</h2>
+                            <h2 className="whitetext" id="reward">How do I get my Egg ?</h2>
                         </div>
                         <div className="row no-gutters">
                             <div className="col-9">
@@ -35,7 +35,7 @@ export default class Reward extends Component {
                 <section className="bg-clair">
                     <div className="container-fluid">
                         <div className="row">
-                            <h2 className="whitetext" id="reward">I have captured one of them, how do I get my reward ?</h2>
+                            <h2 className="whitetext" id="reward">Legendary egg hunter</h2>
                         </div>
                         <div className="row no-gutters">
                             <div className="col-9">
