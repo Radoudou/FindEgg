@@ -9,13 +9,9 @@ import CardDavid from './components/Cards/CardDavid/CardDavid';
 class App extends Component {
   render() {
     return (
-      //<React.Fragment>
-        //<Router />
-        <div>
-        <CardCaro/>
-        </div>
-        
-      //</React.Fragment>
+      <React.Fragment>
+        <Router />
+      </React.Fragment>
       
     );
   }
