@@ -81,7 +81,7 @@ export default class Reward extends Component {
                         </div>
                     </div>
                 </section>
-            </div>
+            </container>
         )
     }
 }

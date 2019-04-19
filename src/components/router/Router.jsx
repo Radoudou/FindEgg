@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import HomePage from '../homePage/HomePage';
+import HomePage from '../HomePage/HomePage';
 import Easter from '../Easter/Easter';
 import SecretStory from '../secretStory/SecretStory'
 

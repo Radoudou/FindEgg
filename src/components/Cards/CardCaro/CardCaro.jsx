@@ -1,19 +1,17 @@
 import React from 'react';
-import { Card, Button, CardHeader, CardFooter, CardBody,
-    CardTitle, CardText, CardSubtitle } from 'reactstrap';
-import "./CardCaro.css"
+import { Card, CardHeader, CardBody, CardTitle, CardText} from 'reactstrap';
+import "./CardCaro.scss"
 
 const CardCaro = (props) => {
     return (
-        <div>
+        <container className="contain-card1">
             <div className="globaldivfame">
-               
                 <Card className='CardGlobal'>
                     <CardBody className='CardTop'>
                         <CardTitle></CardTitle>
                         <CardHeader tag="h3">Manager Bunny</CardHeader>
                     </CardBody>
-                    <img id='cardfame' width="150px" src="https://i.ibb.co/DgKhGv3/Caro.png" />
+                    <img id='cardfame' width="150px" alt="card" src="https://i.ibb.co/DgKhGv3/Caro.png" />
                     <CardBody className='CardBot'>
                     </CardBody>
                     <CardBody className='CardBot'>
@@ -21,10 +19,8 @@ const CardCaro = (props) => {
                     </CardBody>
                 </Card>
             </div>
-            
-        </div>
-
-  );
+        </container>
+    );
 };
 
 export default CardCaro;
