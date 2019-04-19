@@ -1,0 +1,73 @@
+.contain-card1{
+    @import url('https://fonts.googleapis.com/css?family=Chewy');
+.card{
+    width: 35vh;
+    border:2px solid black;
+    margin: 10px;
+        background-image: url('https://i.ibb.co/fM55ZVs/Webp-net-resizeimage-2.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        justify-content: space-around;
+}
+
+
+.card-text{
+    margin: 0px !important;
+    text-align: center;
+    color: #eb69b1;
+    text-shadow: #5e5e5ea9 1px 1px, #5e5e5ea9 1px 1px, #5e5e5ea9 1px 1px, #5e5e5ea9 1px 1px;
+}
+.globaldivfame{
+    display: inline-flex;
+}
+.card{
+    width: 18rem;
+}
+.card-img-top{
+    width: 100px !important;
+}
+.card-header{
+    margin: 0px !important;
+    padding: 0px !important;
+    text-align: center;
+    background-color: transparent !important;
+    border-bottom: none !important;
+    margin: 0px !important;
+    text-align: center;
+    color: #eb69b1;
+    text-shadow: #5e5e5ea9 1px 1px, #5e5e5ea9 1px 1px, #5e5e5ea9 1px 1px, #5e5e5ea9 1px 1px;
+    box-sizing: content-box;
+    font-size: 39px !important;
+    font-family: 'Chewy', cursive;
+    
+}
+
+.CardTop{
+    padding-top: 0 !important;
+    background-color:#ededed;
+
+}
+.CardBot{
+    padding: 0px !important;
+    padding-bottom: 10px !important;
+    background-color:#ededed;
+    
+}
+#cardfame{
+    padding-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 15px;
+}
+.CardGlobal{
+    padding: 0px !important;
+    margin: 0 !important;
+    margin-top: 5px !important;
+}
+.CardEgg{
+    font-size: 28px;
+    font-family: 'Chewy', cursive;
+}
+
+}

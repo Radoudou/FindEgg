@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import './Reward.scss'
+import CardDavid from '../../Cards/CardDavid/CardDavid'
+import CardCaro from '../../Cards/CardCaro/CardCaro'
 
 export default class Reward extends Component {
     render() {
@@ -38,18 +40,11 @@ export default class Reward extends Component {
                             <h2 className="whitetext" id="reward">Legendary egg hunter</h2>
                         </div>
                         <div className="row no-gutters">
-                            <div className="col-9">
-                                <p className="whitetext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales sit
-                                    amet felis at
-                                    mollis.
-                                    Fusce
-                                    aliquet, est sed posuere ultrices, ligula urna commodo ante, eu dictum sapien eros nec tortor.
-                                    Morbi dui
-                                    mauris, convallis at metus nec, consectetur mattis massa. Sed tincidunt, nunc vel suscipit
-                        viverra, mi</p>
+                            <div class="col-sm-6 offset-2 col-12">
+                            <CardDavid/>
                             </div>
-                            <div className="offset-1"></div>
-                            <div className="col-xl-2">
+                            <div class="col-sm-4 col-12">
+                            <CardCaro/>
                             </div>
                         </div>
                         <div className="row no-gutters">
