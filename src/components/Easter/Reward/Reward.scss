@@ -4,24 +4,44 @@
     background-repeat: no-repeat;
     border: inset;
     border-color: #000000;
-}
-
-.bg-clair{
+ }
+ 
+ @media screen and (max-width: 705px) {
+    .bg-sombre{
+        background-image: url("https://i.imgur.com/sclTlWc.jpg");
+        background-size: 5000px, 5000px;
+        background-repeat: no-repeat;
+        border: inset;
+        border-color: #000000;
+    }
+ }
+ 
+ .bg-clair{
     background-image: url("https://i.imgur.com/aqNrfVa.jpg");
     background-size: 100%, 100%;
     background-repeat: no-repeat;
     border: inset;
     border-color: #000000;
-}
-
-section{
+ }
+ 
+ @media screen and (max-width: 705px) {
+    .bg-clair{
+        background-image: url("https://i.imgur.com/aqNrfVa.jpg");
+        background-size: 5000px, 5000px;
+        background-repeat: no-repeat;
+        border: inset;
+        border-color: #000000;
+    }
+ }
+ 
+ section{
     -webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-
-section:hover{
+     transform: scale(1);
+     -webkit-transition: .3s ease-in-out;
+     transition: .3s ease-in-out;
+ }
+ 
+ section:hover{
     -webkit-transform: scale(0.99);
     transform: scale(0.99);
-}
+ }
