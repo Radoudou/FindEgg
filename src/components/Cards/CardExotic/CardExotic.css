@@ -1,17 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Chewy');
-.card{
+.Exotic{
     width: 35vh;
-    border:2px solid black;
+    border:2px solid black !important;
     margin: 10px;
-        background-image: url('https://i.ibb.co/fM55ZVs/Webp-net-resizeimage-2.jpg');
+        background-image: url('https://i.ibb.co/8dy91ZC/Card-Exotic-Back.png') !important;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
         justify-content: space-around;
         
+        
 }
-
-
 .card-text{
     margin: 0px !important;
     text-align: center;

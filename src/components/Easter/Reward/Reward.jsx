@@ -2,12 +2,40 @@ import React, { Component } from 'react'
 import './Reward.scss'
 import CardDavid from '../../Cards/CardDavid/CardDavid'
 import CardCaro from '../../Cards/CardCaro/CardCaro'
+import CardLeg from '../../Cards/CardLeg/CardLeg'
+import CardAscended from '../../Cards/CardAscended/CardAscended';
+import CardExotic from '../../Cards/CardExotic/CardExotic';
+
 
 export default class Reward extends Component {
     render() {
         return (
-            <container className="theReward">
-                <section className="bg-sombre" media="screen">
+            <div>
+                <section className="bg-green">
+                    <div className="container-fluid">
+                        <div className="row">
+                            <h2 className="whitetext" id="reward">Most Wanted Eggs !</h2>
+                        </div>
+                        <div className="row no-gutters">
+                        <div className='offset-2'></div>
+                        <div class="col-xl-3  col-sm-12 ">
+                            <CardExotic/>
+                            </div>
+                            <div class="col-xl-3  col-sm-12">
+                            <CardAscended/>
+                            </div>
+                            <div class="col-xl-4 col-sm-12">
+                            <CardLeg/>
+                            </div>
+                        </div>
+                        
+                        <div className="row no-gutters">
+                            <div className="col-1 col-xl-4"></div>
+                            <div className="col-1 offset-4"></div>
+                        </div>
+                    </div>
+                </section>
+                <section className="bg-sombre">
                     <div className="container-fluid">
                         <div className="row">
                             <h2 className="whitetext" id="reward">How do I get my Egg ?</h2>
