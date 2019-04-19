@@ -30,11 +30,12 @@ class InputContact extends Component {
                             </div>
                         </Container>
                         </Col>
-                        <Col lg="6">
+                        <Col lg="5">
                             <div className="title-image-content">
                                 <h2 className="title-hint">Hint</h2>
                                 <img className="wcs-img" src="https://wildcodeschool.fr/wp-content/uploads/2018/03/LE-PATIO-openspace.png?fbclid=IwAR2U6W6Hntu8x6UbwvOgpNoTd7IZzYjilslVIBqOzQ8-w1xLCo4wf928x-4" alt="WSC" />
                             </div>
+                            <Col></Col>
                         </Col>
                     </Row>
                 </div>

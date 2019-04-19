@@ -1,23 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=Chewy');
-.Ascended{
+.globaldivfame{
+    display: inline-flex;
+ @import url('https://fonts.googleapis.com/css?family=Chewy');
+.Legendary{
     width: 35vh;
     border:2px solid black !important;
-    margin: 10px;
-        background-image: url('https://i.ibb.co/ccmnmsx/Card-Asc-Back.png') !important;
+    margin-top: 10px;
+        background-image: url('https://i.ibb.co/jJctLcb/CardLeg.png') !important;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
         justify-content: space-around;
         
 }
+
 .card-text{
     margin: 0px !important;
     text-align: center;
     color: #eb69b1;
     text-shadow: #5e5e5ea9 1px 1px, #5e5e5ea9 1px 1px, #5e5e5ea9 1px 1px, #5e5e5ea9 1px 1px;
-}
-.globaldivfame{
-    display: inline-flex;
 }
 .card{
     width: 18rem;
@@ -44,7 +44,7 @@
 .CardTop{
     padding-top: 0 !important;
     background-color:#ededed;
-
+    
 }
 .CardBot{
     padding: 0px !important;
@@ -65,4 +65,5 @@
 .CardEgg{
     font-size: 28px;
     font-family: 'Chewy', cursive;
+} 
 }

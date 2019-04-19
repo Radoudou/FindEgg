@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Card, CardHeader, CardBody,
     CardTitle, CardText,} from 'reactstrap';
-import "./CardLeg.css"
+import "./CardLeg.scss"
 import Axios from'axios';
 
 const ApiUrl = 'http://easteregg.wildcodeschool.fr/api/eggs';
@@ -10,7 +10,7 @@ export default class CardLeg extends Component {
     constructor(props){
         super(props);
         this.state = {
-          dataApi : {eggs: 'Joyeuses Pâques'},
+        dataApi : {eggs: 'Joyeuses Pâques'},
         };
     }
     makeApiCall(){
@@ -30,7 +30,6 @@ export default class CardLeg extends Component {
     return (
         <div>
             <div className="globaldivfame">
-                
                 <Card className='Legendary'>
                     <CardBody className='CardTop'>
                         <CardTitle></CardTitle>

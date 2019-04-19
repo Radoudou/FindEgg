@@ -10,21 +10,20 @@ import CardExotic from '../../Cards/CardExotic/CardExotic';
 export default class Reward extends Component {
     render() {
         return (
-            <div>
+            <div className="theReward">
                 <section className="bg-green">
                     <div className="container-fluid">
                         <div className="row">
                             <h2 className="whitetext" id="reward">Most Wanted Eggs !</h2>
                         </div>
                         <div className="row no-gutters">
-                        <div className='offset-2'></div>
-                        <div class="col-xl-3  col-sm-12 ">
+                        <div className="col-xl-3 offset-1  col-sm-12 ">
                             <CardExotic/>
                             </div>
-                            <div class="col-xl-3  col-sm-12">
+                            <div className="col-xl-3 offset-1 col-sm-12">
                             <CardAscended/>
                             </div>
-                            <div class="col-xl-4 col-sm-12">
+                            <div className="col-xl-3 offset-1 col-sm-12">
                             <CardLeg/>
                             </div>
                         </div>
@@ -42,14 +41,7 @@ export default class Reward extends Component {
                         </div>
                         <div className="row no-gutters">
                             <div className="col-9">
-                                <p className="whitetext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales sit
-                                    amet felis at
-                                    mollis.
-                                    Fusce
-                                    aliquet, est sed posuere ultrices, ligula urna commodo ante, eu dictum sapien eros nec tortor.
-                                    Morbi dui
-                                    mauris, convallis at metus nec, consectetur mattis massa. Sed tincidunt, nunc vel suscipit
-                        viverra, mi</p>
+                                <p className="whitetext">Dans votre reflet, vous le trouverez et le mangerez !</p>
                             </div>
                             <div className="offset-1"></div>
                             <div className="col-xl-2">
@@ -68,10 +60,10 @@ export default class Reward extends Component {
                             <h2 className="whitetext" id="reward">Legendary egg hunter</h2>
                         </div>
                         <div className="row no-gutters">
-                            <div class="col-sm-6 offset-2 col-12">
+                            <div className="col-sm-6 col-12">
                             <CardDavid/>
                             </div>
-                            <div class="col-sm-4 col-12">
+                            <div className="col-sm-6 col-12">
                             <CardCaro/>
                             </div>
                         </div>
@@ -81,7 +73,7 @@ export default class Reward extends Component {
                         </div>
                     </div>
                 </section>
-            </container>
+            </div>
         )
     }
 }

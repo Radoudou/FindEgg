@@ -4,12 +4,19 @@ import './AboutTheEgg.scss'
 export default class AboutTheEgg extends Component {
     render() {
         return (
-            <container className='theEgg' >
-                <section className="bg-sombre" media="screen">
-                    <div className="container-fluid">
-                        <div className="row">
-                            <h2 className="whitetext" id="Ring">About the ring</h2>
+            <div className='theEgg' media="screen" >
+                <div className="row">
+                    <section>
+                        <div className="container-fluid">
+                            <div className="row">
+                                <h2 className="whitetext" id="Ring">About the ring</h2>
+                            </div>
                         </div>
+                    </section>
+                </div>
+
+                <div className="row">
+                    <div className="col-12">
                         <section>
                             <div className="card-body">
                                 <div className="card">
@@ -49,30 +56,34 @@ export default class AboutTheEgg extends Component {
                             </div>
                         </section>
                     </div>
-                    <section>
-                        <div className="container-fluid card-margin1">
-                            <div className="card sizecardinput">
-                                <div className="card-header text-black">
-                                    Why the ring is awesome?
+                    <div className="col-12">
+                        <section>
+                            <div className="container-fluid card-margin1">
+                                <div className="card sizecardinput">
+                                    <div className="card-header text-black">
+                                        Why the ring is awesome?
                                 </div>
-                                <div className="card-body">
-                                    <div className="row">
-                                        <div className="col-9">
-                                            <h5 className="card-title text-center fontprecious">my preciooooooooouussssssssss!!! hrk, hrk,
-                                                we want our
+                                    <div className="card-body">
+                                        <div className="row">
+                                            <div className="col-9">
+                                                <h5 className="card-title text-center fontprecious">my preciooooooooouussssssssss!!! hrk, hrk,
+                                                    we want our
                                     precioooooouuussssssss!!</h5>
-                                            <p className="card-text text-right"><small className="text-muted"><b>- Gollum</b></small></p>
-                                        </div>
-                                        <div className="col-3 "><a href="https://placeholder.com"></a><img className="widthimg"
-                                            src="http://www.clker.com/cliparts/p/H/G/T/e/x/white-rabbit-hi.png" alt="placeholder.com" />
+                                                <p className="card-text text-right"><small className="text-muted"><b>- Gollum</b></small></p>
+                                            </div>
+                                            <div className="col-3 ">
+                                                <a href="https://placeholder.com"></a>
+                                                <img className="widthimg"
+                                                    src="http://www.clker.com/cliparts/p/H/G/T/e/x/white-rabbit-hi.png" alt="placeholder.com" />
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
-                </section>
-            </container>
+                        </section>
+                    </div>
+                </div>
+            </div >
         )
     }
 }

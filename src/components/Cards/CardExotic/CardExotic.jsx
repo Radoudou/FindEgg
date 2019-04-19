@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Card, CardHeader, CardBody,
     CardTitle, CardText } from 'reactstrap';
-import "./CardExotic.css"
+import "./CardExotic.scss"
 import Axios from'axios';
 
 const ApiUrl = 'http://easteregg.wildcodeschool.fr/api/eggs';

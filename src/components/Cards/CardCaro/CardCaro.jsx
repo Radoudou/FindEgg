@@ -1,10 +1,11 @@
 import React from 'react';
 import { Card, CardHeader, CardBody, CardTitle, CardText} from 'reactstrap';
 import "./CardCaro.scss"
+import { Container } from 'reactstrap';
 
 const CardCaro = (props) => {
     return (
-        <container className="contain-card1">
+        <Container className="contain-card1">
             <div className="globaldivfame">
                 <Card className='CardGlobal'>
                     <CardBody className='CardTop'>
@@ -19,7 +20,7 @@ const CardCaro = (props) => {
                     </CardBody>
                 </Card>
             </div>
-        </container>
+        </Container>
     );
 };
 

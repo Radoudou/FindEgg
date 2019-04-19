@@ -1,11 +1,9 @@
 
 .theEgg{
-.bg-sombre{
     background-image: url("https://i.imgur.com/sclTlWc.jpg");
     background-size: 100%, 100%;
     border: inset;
     border-color: #000000;
-}
 
 @media screen and (max-width: 705px) {
     .bg-sombre{
@@ -34,7 +32,7 @@ section:hover{
     max-width:80%;
     height:auto;
 }
-.card-margin1{
-    padding-left: 32px;
+.card {
+    width: 100%;
 }
 }

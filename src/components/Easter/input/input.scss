@@ -1,129 +1,129 @@
-.bg-green{
-    background-image: url("https://i.imgur.com/DJYtzYl.jpg");
-    background-size: 100%, 100%;
-    border: inset;
-    border-color: #000000;
-}
-
-@media screen and (max-width: 705px) {
     .bg-green{
         background-image: url("https://i.imgur.com/DJYtzYl.jpg");
-        background-size: 5000px, 5000px;
-        background-repeat: no-repeat;
+        background-size: 100%, 100%;
         border: inset;
         border-color: #000000;
     }
-}
 
-
-section{
-    -webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-
-section:hover{
-    -webkit-transform: scale(0.99);
-    transform: scale(0.99);
-}
-
-.lolo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .lolo {
-        text-align: center;
-        font-weight: 500;
-        color: white;
-        font-size: 100px !important;
-        display: inline-flex;
-        img {
-            margin-top: 25px;
-            margin-right: 20px;
-            margin-left: 20px;
-            animation: pulses 5s  infinite;
-        }
-    }
-}
-.inputform{
-    label{
-        color: white;
-        font-size: 30px;
-    }
-
-.padding-input{
-    padding-bottom: 10%;
-}
-
-.App {
-    max-width: 420px;
-    margin: 0 auto;
-}
-    input[type=text],input[type=email], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
-
-input[type=submit] {
-    background-color: rgba(0, 0, 0, 0.507);
-    color: rgb(255, 255, 255);
-    padding: 12px 20px;   border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-input[type=submit]:hover {
-    animation: pulse 2s  infinite;
-}
-.container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-}
-
-@keyframes pulse {
-    0% {
-        transform: rotate(0deg);
-    background-color: rgba(0, 0, 0, 0.568);
-    }
-    50% {
-        transform: rotate(60deg);
-        background-color: rgba(0, 255, 0, 0.445);
-        }
-    100% {
-        transform: rotate(0deg);
-    background-color: rgba(12, 12, 12, 0.527);
-    }
-}
-
-@keyframes pulses {
-    from {
-        transform: rotate(0deg);
-        }
-        to {
-        transform: rotate(360deg);
+    @media screen and (max-width: 705px) {
+        .bg-green{
+            background-image: url("https://i.imgur.com/DJYtzYl.jpg");
+            background-size: 5000px, 5000px;
+            background-repeat: no-repeat;
+            border: inset;
+            border-color: #000000;
         }
     }
 
 
-}
+    section{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
 
-.title-image-content {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
+    section:hover{
+        -webkit-transform: scale(0.99);
+        transform: scale(0.99);
+    }
 
-    .wcs-img{
+    .lolo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .lolo {
+            text-align: center;
+            font-weight: 500;
+            color: white;
+            font-size: 100px !important;
+            display: inline-flex;
+            img {
+                margin-top: 25px;
+                margin-right: 20px;
+                margin-left: 20px;
+                animation: pulses 5s  infinite;
+            }
+        }
+    }
+    .inputform{
+        label{
+            color: white;
+            font-size: 30px;
+        }
+
+    .padding-input{
+        padding-bottom: 10%;
+    }
+
+    .App {
+        max-width: 420px;
+        margin: 0 auto;
+    }
+        input[type=text],input[type=email], select, textarea {
         width: 100%;
-        border-radius: 10%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
     }
-}
+
+    input[type=submit] {
+        background-color: rgba(0, 0, 0, 0.507);
+        color: rgb(255, 255, 255);
+        padding: 12px 20px;   border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    input[type=submit]:hover {
+        animation: pulse 2s  infinite;
+    }
+    .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: rotate(0deg);
+        background-color: rgba(0, 0, 0, 0.568);
+        }
+        50% {
+            transform: rotate(60deg);
+            background-color: rgba(0, 255, 0, 0.445);
+            }
+        100% {
+            transform: rotate(0deg);
+        background-color: rgba(12, 12, 12, 0.527);
+        }
+    }
+
+    @keyframes pulses {
+        from {
+            transform: rotate(0deg);
+            }
+            to {
+            transform: rotate(360deg);
+            }
+        }
+
+
+    }
+
+    .title-image-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+
+        .wcs-img{
+            width: 100%;
+            border-radius: 10%;
+        }
+    }
