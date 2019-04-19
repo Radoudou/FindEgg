@@ -18,13 +18,13 @@ export default class Reward extends Component {
                         </div>
                         <div className="row no-gutters">
                         <div className='offset-2'></div>
-                        <div class="col-sm-3  col-12">
+                        <div class="col-xl-3  col-sm-12 ">
                             <CardExotic/>
                             </div>
-                            <div class="col-sm-3  col-12">
+                            <div class="col-xl-3  col-sm-12">
                             <CardAscended/>
                             </div>
-                            <div class="col-sm-4 col-12">
+                            <div class="col-xl-4 col-sm-12">
                             <CardLeg/>
                             </div>
                         </div>
