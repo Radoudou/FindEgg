@@ -33,6 +33,22 @@
         border-color: #000000;
     }
  }
+ .bg-green{
+   background-image: url("https://i.imgur.com/DJYtzYl.jpg");
+   background-size: 100%, 100%;
+   background-repeat: no-repeat;
+   border: inset;
+   border-color: #000000;
+ }
+ @media screen and (max-width: 705px) {
+   .bg-green{
+       background-image: url("https://i.imgur.com/DJYtzYl.jpg");
+       background-size: 5000px, 5000px;
+       background-repeat: no-repeat;
+       border: inset;
+       border-color: #000000;
+   }
+}
  
  section{
     -webkit-transform: scale(1);
