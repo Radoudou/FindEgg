@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Chewy');
 .card{
     width: 35vh;
-    border:2px solid black;
+    
     margin: 10px;
         background-image: url('https://i.ibb.co/fM55ZVs/Webp-net-resizeimage-2.jpg');
         background-size: contain;
@@ -63,6 +63,8 @@
 .CardGlobal{
     padding: 0px !important;
     margin: 0 !important;
+    border: 2px solid black !important;
+    
 }
 .CardEgg{
     font-size: 28px;
