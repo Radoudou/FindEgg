@@ -2,6 +2,7 @@
 /* eslint-disable react/style-prop-object */
 import React from 'react';
 import './HomePage.scss';
+import { Link } from 'react-router-dom';
 
 export default function HomePage() {
     return (
@@ -43,9 +44,9 @@ export default function HomePage() {
                 </div>
                 <div className="title ">
                     <h1>Find the Eggious</h1>
-                    <img onClick="" alt="egg" className="element home-egg" src="https://trello-attachments.s3.amazonaws.com/5cb847b18973ce46369e81cd/626x626/c5bde99b68ccaf28a66a6bb53a24d52c/EggHoimepage.png" />
+                    <img alt="egg" className="element home-egg" src="https://trello-attachments.s3.amazonaws.com/5cb847b18973ce46369e81cd/626x626/c5bde99b68ccaf28a66a6bb53a24d52c/EggHoimepage.png" />
                 </div>
-                <img id="run-rabbit" alt="rabbit" src="https://thumbs.gfycat.com/ExcellentCompassionateBernesemountaindog-max-1mb.gif" />
+                <Link to="/Easter"><img id="run-rabbit" alt="rabbit" src="https://thumbs.gfycat.com/ExcellentCompassionateBernesemountaindog-max-1mb.gif" /></Link>
             </div>
         </React.Fragment>
     );

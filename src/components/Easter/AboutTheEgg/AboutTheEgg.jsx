@@ -9,7 +9,7 @@ export default class AboutTheEgg extends Component {
                     <section>
                         <div className="container-fluid">
                             <div className="row">
-                                <h2 className="whitetext" id="Ring">About the ring</h2>
+                                <h2 className="whitetext" id="Ring">About the Egg</h2>
                             </div>
                         </div>
                     </section>
@@ -20,9 +20,9 @@ export default class AboutTheEgg extends Component {
                         <section>
                             <div className="card-body">
                                 <div className="card">
-                                    <div className="card-header text-black">Ring capabilities</div>
+                                    <div className="card-header text-black">Egg capabilities</div>
                                     <div className="card-body">
-                                        <h5 className="card-title">What can our master Sauron do with the ring?</h5>
+                                        <h5 className="card-title">What can our master Roger Rabbit do with the Egg?</h5>
                                         <div className="card-text">
                                             <table className="table table-hover">
                                                 <thead>
@@ -35,18 +35,18 @@ export default class AboutTheEgg extends Component {
                                                 <tbody>
                                                     <tr>
                                                         <th scope="row"></th>
-                                                        <td>Main</td>
-                                                        <td>One ring to rule them all</td>
+                                                        <td>Super Hack</td>
+                                                        <td>One Egg to hack all</td>
                                                     </tr>
                                                     <tr>
                                                         <th scope="row"></th>
-                                                        <td>Invisibily</td>
-                                                        <td>You can't see me</td>
+                                                        <td>Super Dev</td>
+                                                        <td>Full stack</td>
                                                     </tr>
                                                     <tr>
                                                         <th scope="row"></th>
                                                         <td>Power</td>
-                                                        <td>Destroy the world</td>
+                                                        <td>Destroy the Web</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -61,15 +61,21 @@ export default class AboutTheEgg extends Component {
                             <div className="container-fluid card-margin1">
                                 <div className="card sizecardinput">
                                     <div className="card-header text-black">
-                                        Why the ring is awesome?
+                                        Why the Egg is awesome?
                                 </div>
                                     <div className="card-body">
                                         <div className="row">
                                             <div className="col-9">
-                                                <h5 className="card-title text-center fontprecious">my preciooooooooouussssssssss!!! hrk, hrk,
-                                                    we want our
-                                    precioooooouuussssssss!!</h5>
-                                                <p className="card-text text-right"><small className="text-muted"><b>- Gollum</b></small></p>
+                                            <br />
+                                            <br />
+                                            <br />
+                                                <h5 className="card-title text-center para-egg">The time is money !!!!! Run to catch the only Gold Egg: You have to put money aside to have money in front of you.</h5>
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <p className="card-text text-right"><small className="text-muted"><b>- GOLLRABIT</b></small></p>
                                             </div>
                                             <div className="col-3 ">
                                                 <a href="https://placeholder.com"></a>

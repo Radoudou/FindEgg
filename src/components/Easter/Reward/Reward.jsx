@@ -5,6 +5,7 @@ import CardCaro from '../../Cards/CardCaro/CardCaro'
 import CardLeg from '../../Cards/CardLeg/CardLeg'
 import CardAscended from '../../Cards/CardAscended/CardAscended';
 import CardExotic from '../../Cards/CardExotic/CardExotic';
+import { Link } from 'react-router-dom';
 
 
 export default class Reward extends Component {
@@ -39,13 +40,16 @@ export default class Reward extends Component {
                         <div className="row">
                             <h2 className="whitetext" id="reward">How do I get my Egg ?</h2>
                         </div>
+                        <br />
+                        <br />
+                        <br />
                         <div className="row no-gutters">
                             <div className="col-9">
-                                <p className="whitetext">Dans votre reflet, vous le trouverez et le mangerez !</p>
+                                <p className="whitetext para-egg">Dans votre reflet, vous le trouverez et le mangerez !</p>
                             </div>
                             <div className="offset-1"></div>
                             <div className="col-xl-2">
-                                <a href="hhttps://placeholder.com"><img width="200" src="https://thumbs.gfycat.com/ViciousEarlyBactrian-max-1mb.gif" alt="placeholder.com" /></a>
+                                <Link to="/SecretStory"><img width="200" src="https://thumbs.gfycat.com/ViciousEarlyBactrian-max-1mb.gif" alt="placeholder.com" /></Link>
                             </div>
                         </div>
                         <div className="row no-gutters">
