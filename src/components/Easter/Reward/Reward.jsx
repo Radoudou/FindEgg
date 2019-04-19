@@ -4,8 +4,8 @@ import './Reward.scss'
 export default class Reward extends Component {
     render() {
         return (
-            <div>
-                <section className="bg-sombre">
+            <container className="theReward">
+                <section className="bg-sombre" media="screen">
                     <div className="container-fluid">
                         <div className="row">
                             <h2 className="whitetext" id="reward">How do I get my Egg ?</h2>
@@ -58,7 +58,7 @@ export default class Reward extends Component {
                         </div>
                     </div>
                 </section>
-            </div>
+            </container>
         )
     }
 }
