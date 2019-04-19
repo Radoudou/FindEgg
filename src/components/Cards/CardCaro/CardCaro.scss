@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Chewy');
+.contain-card1{
+    @import url('https://fonts.googleapis.com/css?family=Chewy');
 .card{
     width: 35vh;
     border:2px solid black;
@@ -67,4 +68,6 @@
 .CardEgg{
     font-size: 28px;
     font-family: 'Chewy', cursive;
+}
+
 }
