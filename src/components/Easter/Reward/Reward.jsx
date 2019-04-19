@@ -40,10 +40,10 @@ export default class Reward extends Component {
                             <h2 className="whitetext" id="reward">Legendary egg hunter</h2>
                         </div>
                         <div className="row no-gutters">
-                            <div class="col-1 offset-2">
+                            <div class="col-sm-6 col-12">
                             <CardDavid/>
                             </div>
-                            <div class="col-1 offset-4">
+                            <div class="col-sm-6 col-12">
                             <CardCaro/>
                             </div>
                         </div>
