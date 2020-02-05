@@ -35,7 +35,7 @@ export default class CardAscended extends Component {
                         <CardTitle></CardTitle>
                         <CardHeader tag="h3">Ascended Egg</CardHeader>
                     </CardBody>
-                    <img id='cardfame' width="150px" src={this.state.dataApi.image} alt='fuck'/>
+                    <img id='cardfame' width="150px" src={this.state.dataApi.image} alt='EGG'/>
                     <CardBody className='CardBot'>
                         {/* <CardText>Born in 1940</CardText> */}
                     </CardBody>
